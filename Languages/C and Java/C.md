@@ -49,7 +49,7 @@ int main() {
   - for(init, condition, step)
     - step can include several statements like `x++, y++`
   - while(condition)
-  - do, white(condition)
+  - do, while(condition)
   - break, continue
   - ternary operator
   ```c
