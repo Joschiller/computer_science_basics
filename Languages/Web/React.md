@@ -31,6 +31,10 @@
 > https://reactjs.org/docs/getting-started.html
 >
 > https://reactjs.org/tutorial/tutorial.html
+>
+> https://react.dev/learn
+>
+> https://react.dev/reference/react
 
 ## Overview
 
