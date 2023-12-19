@@ -53,6 +53,9 @@
 </html>
 ```
 
+![](./html_1.png)
+![](./html_2.png)
+
 Structuring in HTML5:
 
 - `<header>`: header
