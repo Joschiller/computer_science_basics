@@ -70,6 +70,7 @@ Kann im Zuge der Installation von Flutter mit erledigt werden.
 Dart verwendet ein statisches null-sicheres Typsystem. Nullable Typen werden mit `?` markiert. Die Angabe von Typen ist jedoch optional, da zumeist durch Typinferenz automatisch die Erkennung von Typen möglich ist.
 
 > Vergleich zu TypeScript: Es bleibt fast alles beim Alten.
+>
 > - `undefined` gibt es nicht. Stattdessen nur `null`.
 > - Pluspunkt: Dart ist zur Runtime null-safe.
 
@@ -95,6 +96,20 @@ In Dart kann jedes non-null Objekt als Fehlerobjekt geworfen werden. Dies erlaub
 
 > Vergleich zu TypeScript: Es bleibt alles beim Alten.
 
+Außerdem können mit Streams Ketten von Werten behandelt werden, die sequenziell zurückgegeben werden.
+
+Siehe:
+
+- https://dart.dev/language/concurrency#streams
+- https://dart.dev/language/async#handling-streams
+
 ## Threads
 
 Thread-ähnliche Strukturen werden via `isolates` abgebildet. Die App selbst läuft auf einem `main isolate`, von dem ausgehend weitere erzeugt werden können.
+
+Jeder `isolate` verfügt über eine eigene Speicherverwaltung, sodass Konfliktsituationen (aka Race Conditions) möglichst verhindert werden.
+
+> Mehr Details:
+>
+> - https://dart.dev/language/concurrency
+> - https://dart.dev/language/isolates
