@@ -3,14 +3,14 @@
 ## Referenzen
 
 - https://dart.dev/overview
-  - Online Sandbox: **https://dartpad.dev**
-  - Basics: **https://dart.dev/language**
+  - **Online Sandbox: https://dartpad.dev**
+  - **Basics: https://dart.dev/language**
   - CLI Apps: https://dart.dev/tutorials/server/cmdline
   - Udemy Kurs: https://www.udemy.com/course/complete-dart-guide/?couponCode=SKILLS4SALEB
   - API: https://api.dart.dev/stable/3.5.1/index.html
   - Core Libraries: https://dart.dev/libraries
   - https://dart.dev/resources/books
-- **https://dart.dev/codelabs/dart-cheatsheet**
+- **Cheat Sheet: https://dart.dev/codelabs/dart-cheatsheet**
 
 ## Einstieg
 
