@@ -11,6 +11,7 @@
   - Core Libraries: https://dart.dev/libraries
   - https://dart.dev/resources/books
 - **Cheat Sheet: https://dart.dev/codelabs/dart-cheatsheet**
+- **Codelabs: https://dart.dev/tutorials**
 
 ## Einstieg
 
@@ -24,6 +25,34 @@ Dart setzt sich aus verschiedenen Libraries zusammen (Details siehe https://dart
 
 > Für einen schnellen Syntax-Überblick siehe: [Dart](./Dart.md)
 
+Wie aus dem [Cheat Sheet](https://dart.dev/resources/dart-cheatsheet) ersichtlich, ist die übrige Code-Syntax sehr ähnlich zu TypeScript. Dies betrifft:
+
+- Zugriff auf nullable Werte
+- Collections
+- Arrow-Functions
+- [Exception Handling](#exception-handling)
+
+Zusätzlich gibt es aber viel syntaktischen Zucker, um Code kürzer und lesbarer schreiben zu können:
+
+- https://dart.dev/resources/dart-cheatsheet#null-aware-operators
+- https://dart.dev/resources/dart-cheatsheet#cascades
+- https://dart.dev/resources/dart-cheatsheet#optional-positional-parameters
+- https://dart.dev/resources/dart-cheatsheet#named-parameters
+
+In Bezug auf den Umgang mit Klassen ist Dart recht ähnlich zu Kotlin (bzw. Java mit viel syntaktischem Zucker). Siehe auch:
+
+- https://dart.dev/resources/dart-cheatsheet#getters-and-setters
+- https://dart.dev/resources/dart-cheatsheet#using-this-in-a-constructor
+- https://dart.dev/resources/dart-cheatsheet#initializer-lists
+- https://dart.dev/resources/dart-cheatsheet#named-constructors
+- https://dart.dev/resources/dart-cheatsheet#factory-constructors
+- https://dart.dev/resources/dart-cheatsheet#redirecting-constructors
+- https://dart.dev/resources/dart-cheatsheet#const-constructors
+
+## Exception Handling
+
+In Dart kann jedes non-null Objekt als Fehlerobjekt geworfen werden. Dies erlaubt beispielsweise die Definition eines eigenen Fehlertyps mit vielen Metadaten, der dann beliebig weiter verarbeitet werden kann.
+
 ## Installation
 
 > siehe auch: https://dart.dev/get-dart
@@ -32,7 +61,7 @@ Kann im Zuge der Installation von Flutter mit erledigt werden.
 
 ## Asynchrone Ausführung
 
-`Futures` werden für die Ausführung von asynchronem Code verwendet. Diese müssen mit `await` abgewartet werden. Funktionen, die asynchrone Aufrufe enthalten, müssen das `async`-Keyword aufweisen.
+`Futures` werden für die Ausführung von asynchronem Code verwendet. Diese müssen mit `await` abgewartet werden oder können mit `.then(...)` bzw. `.catchError(...)` behandelt werden. Funktionen, die asynchrone Aufrufe abwarten, müssen das `async`-Keyword aufweisen.
 
 > Vergleich zu TypeScript: Es bleibt alles beim Alten.
 
