@@ -28,6 +28,7 @@ Wie aus dem [Cheat Sheet](https://dart.dev/resources/dart-cheatsheet) und der [I
 - Kontrollstrukturen (if, while, for, break, continue)
 - Destructuring-Patterns (siehe auch https://dart.dev/language/patterns)
 - Funktions- und Variablendefinitionen (diese können auch ohne umgebende Klasse global definiert werden, sodass nicht jede Methode/Variable krampfhaft in eine Klasse verpackt werden muss)
+- Funktionen können selbst als Werte übergeben werden (sog. "tear-offs"), um bspw. Lambdas zu vereinfachen
 - Zugriff auf nullable Werte
 - Collections
 - Arrow-Functions
@@ -89,6 +90,29 @@ Sichtbarkeit von Variablen wird _nicht_ über Keywords wie `private` oder `publi
 In Dart kann jedes non-null Objekt als Fehlerobjekt geworfen werden. Dies erlaubt beispielsweise die Definition eines eigenen Fehlertyps mit vielen Metadaten, der dann beliebig weiter verarbeitet werden kann.
 
 > Mehr Details: https://dart.dev/language/error-handling
+
+## Klassen und Objekte
+
+Klassen funktionieren grundsätzlich ähnlich zu Kotlin (und somit ähnlich zu Java).
+
+Hier eine Liste der Besonderheiten:
+
+- Grundwissen:
+  - Jede Klasse erzeugt implizit auch ein interface. D.h. jede Klasse kann von einer anderen Klasse mit `implements` als Interface aufgegriffen werden.
+  - Jede Klasse verfügt über einen Default-Konstruktor ohne sämtliche Parameter.
+  - Klassen können über mehrere benannte Konstruktoren verfügen (siehe https://dart.dev/language/constructors#named-constructors).
+  - Mit `const`-Konstruktoren können Singletons erzeugt werden (siehe https://dart.dev/language/constructors#constant-constructors).
+  - Mit `factory`-Konstruktoren können komplexe Operationen bei der Erzeugung von Objekten vorgenommen werden, ohne `final`-Instanzvariablen aufweichen zu müssen (https://dart.dev/language/constructors#factory-constructors).
+  - Die Initialisierung von Instanzvariablen ist auf verschiedenen drei Wegen möglich (siehe https://dart.dev/language/constructors#instance-variable-initialization).
+  - Für Klassen können custom-Operatoren definiert werden (siehe https://dart.dev/language/methods#operators).
+  - Zusätzlich zu den Instanzvariablen einer Klasse können weitere getter/setter definiert werden, um weitere Variablen hinzuzufügen, die auf anderen Instanzvariablen basieren (siehe https://dart.dev/language/methods#getters-and-setters).
+- Mächtige Features:
+  - Mit `mixins` ist Mehrfachvererbung möglich (siehe https://dart.dev/language/mixins).
+  - `enums` sind sehr mächtig (ähnlich wie in Kotlin), da sie über eigene Attribute verfügen und somit ganze Codesets innerhalb eines Enums definiert werden können (siehe https://dart.dev/language/enums).
+  - Klassen können (ähnlich wie in Kotlin) über Extension-Methods ohne Erzeugung einer Kindklasse um Methoden erweitert werden (siehe https://dart.dev/language/extension-methods).
+- Weiteres (in das ich mich noch nicht näher eingelesen habe):
+  - https://dart.dev/language/extension-types
+  - https://dart.dev/language/callable-objects
 
 ## Asynchrone Ausführung
 
