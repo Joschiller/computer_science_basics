@@ -342,6 +342,21 @@ This at runtime: accessing function-methods outside the class can cause a loss o
 
 ### Type Manipulation
 
+Generally useful types:
+
+```ts
+type T = { ... } | undefined | null
+type T_NonNull = NonNullable<T> // removes undefined and null from a type
+
+type O = {
+  prop1: string
+  prop2: string
+  prop3: string
+}
+
+type P = Omit<O, 'prop1' | 'prop2'> // removes all listed props from a type
+```
+
 #### Generics
 
 > https://www.typescriptlang.org/docs/handbook/2/generics.html
