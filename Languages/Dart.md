@@ -43,7 +43,7 @@
   - non-null can be asserted with `!`
   - after a null-check that leaves a function, the system can smart-cast to nun-nullable type
   - `late` keyword before uninitialized variable declaration allows access without null-check
-- supports string interpolation
+- supports string interpolation in every kind of string (see https://dart.dev/language/built-in-types#strings)
 - expects `;` after every line
 - ternary operator exists
 
