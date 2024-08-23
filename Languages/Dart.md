@@ -192,7 +192,7 @@ try {
 - futures must be called with `await` before the call
 - functions calling a future must have the `async` keyword
 - errors are caught using `try-catch` around the awaited future-call or using `.then(onSuccess, onError)` or `.catchError(onError, [(e) => e is TypeOfException])` (see also: https://dart.dev/guides/libraries/futures-error-handling#handling-specific-errors)
-- optional ending statement: `.whenComplete(onComplete)`
+- optional ending statement: `.whenComplete(onComplete)` (works like finally)
 - Stream = series of async events -> `await for ...` loop
   - errors can be catched with try-catch around the await-for-loop
   - helper methods for streams: e.g. `.lastWhere(predicate)`

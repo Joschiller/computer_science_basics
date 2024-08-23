@@ -118,7 +118,12 @@ Hier eine Liste der Besonderheiten:
 
 `Futures` werden für die Ausführung von asynchronem Code verwendet. Diese müssen mit `await` abgewartet werden oder können mit `.then(...)` bzw. `.catchError(...)` behandelt werden. Funktionen, die asynchrone Aufrufe abwarten, müssen das `async`-Keyword aufweisen.
 
-> Vergleich zu TypeScript: Es bleibt alles beim Alten.
+> Vergleich zu TypeScript: Es bleibt alles beim Alten. `Future` in Dart ist das gleiche wie `Promise` in TypeScript.
+
+Hinweise zu möglichen Fehlerquellen:
+
+- https://dart.dev/libraries/async/futures-error-handling#potential-problem-failing-to-register-error-handlers-early
+- https://dart.dev/libraries/async/futures-error-handling#potential-problem-accidentally-mixing-synchronous-and-asynchronous-errors
 
 Außerdem können mit Streams Ketten von Werten behandelt werden, die sequenziell zurückgegeben werden.
 
@@ -126,6 +131,9 @@ Siehe:
 
 - https://dart.dev/language/concurrency#streams
 - https://dart.dev/language/async#handling-streams
+- https://dart.dev/libraries/async/using-streams
+- https://dart.dev/libraries/async/creating-streams
+- https://dart.dev/language/functions#generators
 
 ## Threads
 
