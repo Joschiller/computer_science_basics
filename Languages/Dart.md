@@ -19,19 +19,9 @@
 
 ## References
 
-> https://dart.dev/overview
->
-> https://dartpad.dev/?
->
-> https://dart.dev/language
->
-> https://api.dart.dev/stable/3.2.3/index.html
->
-> https://dart.dev/codelabs/dart-cheatsheet
+> see [DartQuickstart](./DartQuickstart.md#referenzen)
 >
 > https://dart.dev/tools/dart-format
->
-> https://dart.dev/get-dart
 >
 > Deep-Dive and Examples:
 >
@@ -40,8 +30,6 @@
 > - https://codelabs.developers.google.com/codelabs/dart-patterns-records#0
 > - https://dart.dev/tutorials/server/cmdline
 > - https://www.youtube.com/playlist?list=PLjxrf2q8roU0Net_g1NT5_vOO3s_FR02J
->
-> Libraries: https://dart.dev/libraries
 
 ## Overview
 
@@ -150,8 +138,6 @@ final aMapOfIntToDouble = <int, double>{};
   }
   ```
 - factory constructors
-
-  ````dart
   ```dart
   class SomeClass {
     SomeClass();
@@ -159,10 +145,6 @@ final aMapOfIntToDouble = <int, double>{};
       // ... return some new instance of SomeClass
     }
   }
-  ````
-
-  ```
-
   ```
 
 - constructors can also redirect to other constructors using `the called constructor : the constructor to redirect to`
