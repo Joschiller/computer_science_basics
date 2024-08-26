@@ -20,7 +20,11 @@ Unbedingt lesenswerte Artikel sind fett hervorgehoben.
 - **Cheat Sheet: https://dart.dev/codelabs/dart-cheatsheet**
 - Codelabs/Tutorials: https://dart.dev/tutorials
   - Deep-Dive für Patterns und Records: https://codelabs.developers.google.com/codelabs/dart-patterns-records
-- Codestyle Konventionen (per Lint erschlagbar): https://dart.dev/effective-dart/style
+- **Codestyle: https://dart.dev/effective-dart**
+  - Codestyle Konventionen (per Lint erschlagbar): https://dart.dev/effective-dart/style
+  - Dokumentationsstil: https://dart.dev/effective-dart/documentation
+  - Dart-Verwendung: https://dart.dev/effective-dart/usage
+  - Code-Design: https://dart.dev/effective-dart/design
 
 ## Einstieg
 
