@@ -56,8 +56,6 @@ In Bezug auf den Umgang mit Klassen ist Dart recht ähnlich zu Kotlin (bzw. Java
 - https://dart.dev/resources/dart-cheatsheet#const-constructors
 - https://www.fluttersolution.com/2023/04/understanding-access-modifiers-in-dart.html
 
-Dart setzt sich aus verschiedenen Libraries zusammen (Details siehe https://dart.dev/overview#libraries). Über gewisse Standard-Libraries hinaus können aber auch weitere hinzugefügt werden.
-
 > Für einen schnellen Syntax-Überblick über einige Grundkonzepte siehe: [Dart](./Dart.md)
 
 ## Installation
@@ -65,6 +63,23 @@ Dart setzt sich aus verschiedenen Libraries zusammen (Details siehe https://dart
 > siehe auch: https://dart.dev/get-dart
 
 Kann im Zuge der Installation von Flutter mit erledigt werden.
+
+## Packages
+
+Dart setzt sich aus verschiedenen Libraries zusammen (Details siehe https://dart.dev/overview#libraries). Über gewisse Standard-Libraries hinaus können aber auch weitere hinzugefügt werden. Jedes Dart-Package wird durch eine `pubspec.yaml` beschrieben (vergleichbar zur `package.json`, siehe auch https://dart.dev/tools/pub/pubspec). Die tatsächlich installierten Versionen werden in einem `lockfile` gespeichert, das mit einzuchecken ist.
+
+In der `pubspec.yaml` werden nur die direkten Dependencies/DevDependencies aufgelistet. Transitive Abhängigkeiten werden automatisch aufgelöst. Es ist auch möglich, private Server zum Laden der Packages anzugeben oder direkt auf ein git-Repository zu verweisen. Auch lokale Pfade können als Quelle angegeben werden.
+
+- Tool: `pub package manager`
+  
+  Nutzung via IDE (bspw. VS Code) oder CLI (`dart pub ...`)
+- Offizielles Package Repository: https://pub.dev/
+  - Installieren von Packages: `dart pub get` (Äquivalent zu `npm i` oder `yarn install`)
+  - Hinzufügen von packages: `dart pub get <package>` (Äquivalent zu `npm i <package>` oder `yarn add <package>`)
+  - Update von Packages: `dart pub outdated` und `dart pub upgrade [<package>]`
+- Nutzung im Code via `import 'package';`
+
+> `dart pub`-Befehle: https://dart.dev/tools/pub/cmd
 
 ## Typsystem
 
