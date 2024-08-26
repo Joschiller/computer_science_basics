@@ -36,6 +36,8 @@ Useful hotkeys:
 
 ## Useful Components
 
+> Hint: use `const` when instantiating components that never change when re-rendering
+
 - `Center`
 - `SizedBox` for spacing
 - `Column`/`Row`
