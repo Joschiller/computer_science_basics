@@ -20,4 +20,26 @@
 >
 > https://docs.flutter.dev/codelabs
 
+> General philosophy: composition over inheritance -> wrap widgets within each other instead of adding new properties to existing widgets
+
 ## Overview
+
+Useful hotkeys:
+- F5: build and install
+- right click (or Strg+.) on selected code -> "refactor" -> e.g. "Extract Widget"
+- Strg+Shift+Space -> shows parameters of a currently called method
+
+## Stateless/Stateful Widgets
+
+- stateless = state is managed outside the widget
+- stateful = state is managed by the widget itself (manage state using instance variables and `setState`)
+
+## Useful Components
+
+- `Center`
+- `SizedBox` for spacing
+- `Column`/`Row`
+  - `mainAxisAlignment: MainAxisAlignment.center` for centered UI
+- `SafeArea`/`Expanded`
+  - `SafeArea` only fills the needed area
+  - `Expanded` fills all available area
