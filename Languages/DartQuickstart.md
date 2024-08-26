@@ -19,6 +19,7 @@ Unbedingt lesenswerte Artikel sind fett hervorgehoben.
   - https://dart.dev/resources/books
 - **Cheat Sheet: https://dart.dev/codelabs/dart-cheatsheet**
 - Codelabs/Tutorials: https://dart.dev/tutorials
+  - Deep-Dive für Patterns und Records: https://codelabs.developers.google.com/codelabs/dart-patterns-records
 - Codestyle Konventionen (per Lint erschlagbar): https://dart.dev/effective-dart/style
 
 ## Einstieg
@@ -42,8 +43,19 @@ Zusätzlich gibt es aber viel syntaktischen Zucker, um Code kürzer und lesbarer
 - https://dart.dev/resources/dart-cheatsheet#named-parameters
 - mehr Details zu Funktionen: https://dart.dev/language/functions
 - https://dart.dev/language/branches (ähnlich zu `switch` in TypeScript, aber mächtiger)
-  - sehr mächtig im Zusammenspiel mit Patterns: https://dart.dev/language/pattern-types
+  
+  Nicht leere Switch-Cases werden implizit mit einem `break` beendet, können aber mit einem `continue` auch ein Fallthrough realisieren.
+  
+  Außerdem können in den Switch-Cases auch logische Operatoren verwendet werden, um komplexe Fälle abzubilden. `_` in einem Case verhält sich wie `default` und nimmt alle Fälle entgegen, die bis zu diesem Case noch nicht behandelt wurden. Somit ist Pattern-Matching in Dart möglich (siehe auch https://dart.dev/language/pattern-types).
+    
 - https://dart.dev/language/records (inline-Definition von Typen, ohne diesen explizit zu benennen - bspw. nützlich, um aus einer Funktion mehrere Rückgabewerte zurückzugeben)
+  
+  > Das Prinzip von Records gibt es in ähnlicher Form bspw. in React beim `useState`-Hook. Mittels Destructuring Patterns werden dort zwei Werte aus einer Funktion zurückgegeben. Das ist mittels Records auch in Dart möglich.
+- Beispiele für Pattern Matching:
+  - Pattern Matching mit Records: https://codelabs.developers.google.com/codelabs/dart-patterns-records#6
+  - Pattern Matching mit Switches: https://codelabs.developers.google.com/codelabs/dart-patterns-records#9
+  - Pattern Matching mit Objekten: https://codelabs.developers.google.com/codelabs/dart-patterns-records#10
+  - Pattern Matching mit Enums oder Sealed Klassen: https://codelabs.developers.google.com/codelabs/dart-patterns-records#11
 
 In Bezug auf den Umgang mit Klassen ist Dart recht ähnlich zu Kotlin (bzw. Java mit viel syntaktischem Zucker). Siehe auch:
 
