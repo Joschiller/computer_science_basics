@@ -22,7 +22,7 @@
 
 ## Usage
 
-- web devenlopment
+- web development
 - UI framework
 - based on [JavaScript](./JavaScript.md) or [TypeScript](./TypeScript.md), [HTML](./HTML.md) and [CSS](./CSS.md)
 

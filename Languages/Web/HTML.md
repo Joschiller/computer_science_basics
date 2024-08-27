@@ -22,7 +22,7 @@
 
 ## Usage
 
-- web devenlopment
+- web development
 - UI
 - Today: HTML = Structure, CSS = presentation, JS = Behavior, PHP = Backend, CMS = Content Management
 
