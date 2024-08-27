@@ -111,6 +111,10 @@ class _ExampleWidgetState extends State<ExampleWidget> {
 }
 ```
 
+> In größeren Apps ist es ratsam anstelle von stateful Widgets auf Redux zum appweiten State-Management zurückzugreifen.
+>
+> Einstieg in Redux in Flutter: https://blog.logrocket.com/flutter-redux-complete-tutorial-with-examples/
+
 ## Material Design
 
 Um Material Design nutzen zu können (siehe https://docs.flutter.dev/ui#basic-widgets):
