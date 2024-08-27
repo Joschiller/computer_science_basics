@@ -8,6 +8,7 @@
     - Flutter via VS Code installieren
 - Einstieg in viele Artikel je nach bisheriger Erfahrung: https://flutter.dev/learn
   - Codelab für eine erste Flutter-App: https://docs.flutter.dev/get-started/codelab
+  - Einstieg zum Layout im Vergleich zur Webentwicklung: https://docs.flutter.dev/get-started/flutter-for/web-devs
 
 ## Einstieg
 
@@ -16,8 +17,15 @@ Mittels Flutter gebaute UI setzt sich aus Widgets zusammen. Die Struktur von Wid
 Flutter verfolgt dabei folgende Ansätze (die sehr ähnlich zu React sind):
 
 - Alles, was in der UI sichtbar ist, sind Widgets. (Ähnlich zu den Komponenten in React. Am ehesten sind die Widgets zu klassenbasierten React-Komponenten vergleichbar.)
-- Widgets werden via Komposition miteinander kombiniert. D.h. sie werden ineinander geschachtelt. (Sehr ähnlich zu React bzw. HTML.)
+- Widgets werden via Komposition miteinander kombiniert, indem sie ineinander geschachtelt werden. (Sehr ähnlich zu React bzw. HTML.) D.h. hier wird **nicht** auf Vererbung gesetzt.
 - State und UI werden voneinander getrennt definiert, aber die UI reagiert per re-rendering auf geänderten State. (Sehr ähnlich zu React/Redux, nur dass in Flutter immer explizit die Nutzer des States benachrichtigt werden müssen.)
+
+Flutter unterscheided zwischen "stateless" und "stateful" Widgets:
+
+- "stateless" Widgets werden verwendet, wenn sie von nichts weiter abhängen als der Konfiguration, die dem Widget übergeben wird. Der State des Widgets wird dann außerhalb durch andere Komponenten verwaltet. (Vergleichbar zu Props in React.)
+- "stateful" Widgets werden verwendet, wenn sie selbst einen Zustand verwalten müssen. Der State wird mittels Instanzvariablen und `setState` abgebildet. (Vergleichbar zu `useState` in React.)
+
+Das Layout der Widgets wird in Flutter auch über Widgets realisiert. So gibt es beispielsweise Widgets wie `Center`, `Padding`, `SizedBox`, ..., mit denen UI-Elemente angeordnet werden können.
 
 ## Hot Reload
 
