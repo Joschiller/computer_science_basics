@@ -53,6 +53,63 @@ Durch Nutzung von VS Code und der entsprechenden Plugins für Dart und Flutter w
 - Codestelle markieren -> `Strg` + `.` (oder Rechtsklick) -> `Extract ...`/`Wrap with ...` = verschiedene Optionen zum schnellen Refactoring oder zur schnellen Ergänzung von Komponenten
 - `Strg` + `Shift` + `Leertaste` =  Parameterliste einer Methode anzeigen
 
+## Genereller Aufbau einer Flutter App
+
+Kern einer Flutter-App ist die `main`-Methode:
+
+```dart
+void main() {
+  runApp(MyApp());
+}
+```
+
+Alles innerhalb von `runApp` sind Widgets.
+
+Beim Anlegen eines neuen Widgets ist die Grundstruktur folgende:
+
+```dart
+class ExampleWidget extends StatelessWidget {
+  const ExampleWidget({
+    super.key,
+    required this.someAttribute, // overhand attributes of the widget
+  });
+
+  // declare attributes of the widget
+  final String someAttribute;
+
+  @override
+  Widget build(BuildContext context) {
+    return ...; // return widget tree
+  }
+}
+```
+
+Bei stateful Widgets wird die State-Definition vom Widget selbst getrennt.
+
+```dart
+class ExampleWidget extends StatefulWidget {
+  const ExampleWidget({
+    super.key,
+    required this.someAttribute, // overhand attributes of the widget
+  });
+
+  // declare attributes of the widget
+  final String someAttribute;
+
+  @override
+  State<ExampleWidget> createState() => _ExampleWidgetState();
+}
+
+class _ExampleWidgetState extends State<ExampleWidget> {
+  var someState = 0; // use setState to update
+
+  @override
+  Widget build(BuildContext context) {
+    return ...; // return widget tree
+  }
+}
+```
+
 ## Material Design
 
 Um Material Design nutzen zu können (siehe https://docs.flutter.dev/ui#basic-widgets):
