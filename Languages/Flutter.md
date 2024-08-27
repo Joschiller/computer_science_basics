@@ -22,6 +22,9 @@
 - `SizedBox` for spacing
 - `Column`/`Row`
   - `mainAxisAlignment: MainAxisAlignment.center` for centered UI
+    - main axis for column is vertical
+    - main axis for row is horizontal
+  - `crossAxisAligment` references the axis orthogonal to the main axis
 - `SafeArea`/`Expanded`
   - `SafeArea` only fills the needed area
   - `Expanded` fills all available area
