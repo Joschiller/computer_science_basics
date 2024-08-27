@@ -6,7 +6,9 @@
 
 ## Usage
 
-- mobile development with [Dart](./Dart.md)
+- mobile development
+- UI framework
+- based on [Dart](./Dart.md)
 
 ## References
 
