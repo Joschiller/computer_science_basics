@@ -17,6 +17,7 @@ Wichtige Übersichten sind fett hervorgehoben.
 - **Anleitungen für konkrete Problemlösungen: https://docs.flutter.dev/cookbook**
 - **Einführung in UI-Komponenten: https://docs.flutter.dev/ui**
 - **Widget Überblick: https://docs.flutter.dev/ui/widgets**
+- **Layout: https://docs.flutter.dev/ui/layout**
 
 ## Einstieg
 
