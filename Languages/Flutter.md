@@ -13,12 +13,6 @@
 ## References
 
 > see [FlutterQuickstart](./FlutterQuickstart.md#referenzen)
->
-> https://docs.flutter.dev/codelabs
->
-> https://docs.flutter.dev/cookbook
->
-> https://docs.flutter.dev/ui
 
 ## Useful Components
 
