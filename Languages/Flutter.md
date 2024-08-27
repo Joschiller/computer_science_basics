@@ -14,16 +14,6 @@
 
 > see [FlutterQuickstart](./FlutterQuickstart.md#referenzen)
 >
-> https://flutter.dev/learn
->
-> https://docs.flutter.dev/get-started/install/windows/mobile
->
-> https://docs.flutter.dev/get-started/test-drive
->
-> https://docs.flutter.dev/get-started/codelab
->
-> https://docs.flutter.dev/get-started/learn-more
->
 > https://docs.flutter.dev/get-started/flutter-for/android-devs
 >
 > https://docs.flutter.dev/get-started/flutter-for/web-devs
@@ -35,13 +25,6 @@
 > https://docs.flutter.dev/ui
 
 > General philosophy: composition over inheritance -> wrap widgets within each other instead of adding new properties to existing widgets
-
-## Overview
-
-Useful hotkeys:
-- F5: build and install
-- right click (or Strg+.) on selected code -> "refactor" -> e.g. "Extract Widget"
-- Strg+Shift+Space -> shows parameters of a currently called method
 
 ## Stateless/Stateful Widgets
 
