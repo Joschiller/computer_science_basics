@@ -29,3 +29,4 @@
   - `SafeArea` only fills the needed area
   - `Expanded` fills all available area
 - `ListView` provides a scrollable view
+- `Stack` + `Positioned` works similar to constraint layout in Android
