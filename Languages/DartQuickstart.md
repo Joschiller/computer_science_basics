@@ -138,7 +138,7 @@ Hier eine Liste der Besonderheiten:
   - Für Klassen können custom-Operatoren definiert werden (siehe https://dart.dev/language/methods#operators).
   - Zusätzlich zu den Instanzvariablen einer Klasse können weitere getter/setter definiert werden, um weitere Variablen hinzuzufügen, die auf anderen Instanzvariablen basieren (siehe https://dart.dev/language/methods#getters-and-setters).
 - Mächtige Features:
-  - Mit `mixins` ist Mehrfachvererbung möglich (siehe https://dart.dev/language/mixins).
+  - Mit `mixins` ist (ansatzweise) Mehrfachvererbung möglich (siehe https://dart.dev/language/mixins).
   - `enums` sind sehr mächtig (ähnlich wie in Kotlin), da sie über eigene Attribute verfügen und somit ganze Codesets innerhalb eines Enums definiert werden können (siehe https://dart.dev/language/enums).
   - Klassen können (ähnlich wie in Kotlin) über Extension-Methods ohne Erzeugung einer Kindklasse um Methoden erweitert werden (siehe https://dart.dev/language/extension-methods).
 - Weiteres (in das ich mich noch nicht näher eingelesen habe):
