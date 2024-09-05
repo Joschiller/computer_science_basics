@@ -30,3 +30,4 @@
   - `Expanded` fills all available area
 - `ListView` provides a scrollable view
 - `Stack` + `Positioned` works similar to constraint layout in Android
+- `SafeArea` enures space around the actual content to mitigate overlaps with operating system UI
