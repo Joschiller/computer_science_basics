@@ -134,7 +134,7 @@ Hier eine Liste der Besonderheiten:
   - Klassen können über mehrere benannte Konstruktoren verfügen (siehe https://dart.dev/language/constructors#named-constructors).
   - Mit `const`-Konstruktoren können Singletons erzeugt werden (siehe https://dart.dev/language/constructors#constant-constructors).
   - Mit `factory`-Konstruktoren können komplexe Operationen bei der Erzeugung von Objekten vorgenommen werden, ohne `final`-Instanzvariablen aufweichen zu müssen (https://dart.dev/language/constructors#factory-constructors).
-  - Die Initialisierung von Instanzvariablen ist auf verschiedenen drei Wegen möglich (siehe https://dart.dev/language/constructors#instance-variable-initialization).
+  - Die Initialisierung von Instanzvariablen ist auf drei Wegen möglich (siehe https://dart.dev/language/constructors#instance-variable-initialization).
   - Für Klassen können custom-Operatoren definiert werden (siehe https://dart.dev/language/methods#operators).
   - Zusätzlich zu den Instanzvariablen einer Klasse können weitere getter/setter definiert werden, um weitere Variablen hinzuzufügen, die auf anderen Instanzvariablen basieren (siehe https://dart.dev/language/methods#getters-and-setters).
 - Mächtige Features:
