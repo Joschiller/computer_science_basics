@@ -394,8 +394,7 @@ enum name {
 
 - standard values: integer indexes starting with 0
 - also only some values can be assigned → sets the following enumerators to following integers
-  to assign enum value to an integer
-  → cast the variable: `int x = (int)<enum>.<element>;`
+- to assign enum value to an integer → cast the variable: `int x = (int)<enum>.<element>;`
 
 ### Exceptions
 
