@@ -159,18 +159,17 @@ class MyList<T> { <code> } //code must use the generic datatype T
 - return a value with the return keyword: e.g. `return <value>;`
 - return type "void" = nothing will be returned
 - for overloading: need to differ in list of parameters, can differ in return type
-  Passing Arguments:
-- by value: pass only variable or value; don’t change the original
-- by reference: ref-keyword in method and method-call needed; changes the original
-- by output: out-keyword in method and method-call needed → method can write to this variable (so must be declared before!)
-  Generic Methods:
-
-```cs
-[static] <return type> <name><list of generics>(<attributes> [= <default>]) [where <generic condition>] { <code> }
-//e.g.
-static T twoTimes<T>(T x) { return x + x; }
-static void difTypes<T, U>(T a, U b) where T : class { <code> }
-```
+- Passing Arguments:
+  - by value: pass only variable or value; don’t change the original
+  - by reference: ref-keyword in method and method-call needed; changes the original
+  - by output: out-keyword in method and method-call needed → method can write to this variable (so must be declared before!)
+- Generic Methods:
+  ```cs
+  [static] <return type> <name><list of generics>(<attributes> [= <default>]) [where <generic condition>] { <code> }
+  //e.g.
+  static T twoTimes<T>(T x) { return x + x; }
+  static void difTypes<T, U>(T a, U b) where T : class { <code> }
+  ```
 
 ### Encapsulation
 
