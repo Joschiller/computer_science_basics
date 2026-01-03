@@ -208,6 +208,7 @@ if someValue in listVariable:
 | `sum(<list>)`                   | sum of all values in a _list_                                                                                       |
 | `all(<boollist>)`               | True if all elements are True                                                                                       |
 | `any(<boollist>)`               | True if any element is True                                                                                         |
+| <str in between>.join(<list>)   | creates a string from a list                                                                                        |
 
 Comprehensions:
 
